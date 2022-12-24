@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title> INI JUDUL DI TAB BROWSER </title>
+
+    <script type="text/javascript">
+        flag = 1
+        function f1() {
+            alert("Thanks Udah pilih Jawaban YA")
+        }
+        function f() {
+            if (flag == 1) {
+                Bn.style.top = 400
+                Bn.style.left = 300
+                flag = 2
+            }
+            else if (flag == 2) {
+                Bn.style.top = 400
+                Bn.style.left = 50
+                flag = 3
+            }
+            else if (flag == 3) {
+                Bn.style.top = 370
+                Bn.style.left = 166
+                flag = 1
+            }
+        }
+    </script>
+
+    <style>
+        .img {
+            position: relative;
+            left: 42px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> Selamat Ultah AAY KICIK<h1>
+            <img alt="EvilicaCell"
+                class="img"
+                src="https://i.pinimg.com/originals/f6/a9/59/f6a95974cfafd7dee9e24fc1a030833a.jpg" width="300" />
+            <h1>Sayang Aku Tak ?</h1>
+            <div id="By" style="position:absolute; left:64px; top:470px; width:210px;
+    height:210px;">
+                <input type="button" value=" YA " onClick="f1()" />
+            </div>
+            <div ID="Bn" style="position:absolute; left:166px; top:470px; width:210px; height:210px;">
+                <input type="button" value=" TIDAK " onMouseOver="f()" />
+            </div>
+
+</body>
+
+</html>
